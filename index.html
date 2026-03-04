@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnoverso | Pioneros de la Tecnología</title>
+    <link rel="stylesheet" href="landingstyle.css">
+</head>
+<body>
+
+    <header>
+        <div id="logo"><h1>TECNOVERSO</h1></div>
+        <nav>
+            <button class="menu-toggle">☰</button>
+            <ul>
+                <li><a href="#historia">Nosotros</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#pioneros">Pioneros</a></li>
+                <li><a href="#fundadores">Fundadores</a></li>
+                <li><a href="#internet">Internet</a></li>
+                <li><a href="#quizz">Quizz</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h1>Forjadores del Futuro Digital</h1>
+        <p>Un recorrido por las mentes brillantes que transformaron la computación, el internet y la inteligencia artificial.</p>
+        <button type="button" onclick="location.href='#pioneros'">Explorar Legado</button>
+    </section>
+
+    <section id="historia" class="seccion-historia">
+        <div class="historia-flex">
+            <div class="historia-texto">
+                <h2>Nuestro Propósito</h2>
+                <p>Tecnoverso nació con la misión de democratizar el conocimiento sobre la evolución digital. Buscamos inspirar a las nuevas generaciones mostrando el lado humano de los algoritmos.</p>
+            </div>
+            <div class="historia-form">
+                <h3>Tus Expectativas</h3>
+                <textarea id="expectativasText" placeholder="¿Qué esperas aprender?"></textarea>
+                <div class="stars" id="rating-stars">
+                    <span class="star" onclick="setRating(1)">★</span>
+                    <span class="star" onclick="setRating(2)">★</span>
+                    <span class="star" onclick="setRating(3)">★</span>
+                    <span class="star" onclick="setRating(4)">★</span>
+                    <span class="star" onclick="setRating(5)">★</span>
+                </div>
+                <button type="button" class="btn-enviar-expectativas" onclick="enviarExpectativas()">Enviar</button>
+                <div id="mensaje-exito" class="mensaje-oculto"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pioneros" class="categoria-seccion">
+        <h2>Pioneros del Software</h2>
+        <div class="grid-personajes">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="Alan_Turing_Aged_16.jpg" alt="Alan Turing">
+                        <h3>Alan Turing</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p><strong>Aporte:</strong> Padre de la computación moderna.</p>
+                        <p><strong>Influencia:</strong> Descifró Enigma y sentó las bases de la IA.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="Ada_Lovelace_portrait_circa_1840.jpg" alt="Ada Lovelace">
+                        <h3>Ada Lovelace</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p><strong>Aporte:</strong> Primera programadora de la historia.</p>
+                        <p><strong>Influencia:</strong> Escribió el primer algoritmo para una máquina.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="Grace hopper.jpg" alt="Grace Hopper">
+                        <h3>Grace Hopper</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p><strong>Aporte:</strong> Creadora del lenguaje COBOL.</p>
+                        <p><strong>Influencia:</strong> Inventó el primer compilador para computadoras.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="Dennis Ritchie.jpg" alt="Dennis Ritchie">
+                        <h3>Dennis Ritchie</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p><strong>Aporte:</strong> Creador de C y UNIX.</p>
+                        <p><strong>Influencia:</strong> Su lenguaje es la base de casi todo el software moderno.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="Linus torvalds.jpg" alt="Linus Torvalds">
+                        <h3>Linus Torvalds</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p><strong>Aporte:</strong> Creador del kernel Linux y Git.</p>
+                        <p><strong>Influencia:</strong> Revolucionó el software libre y el desarrollo colaborativo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fundadores" class="categoria-seccion">
+        <h2>Fundadores de Empresas</h2>
+        <div class="grid-personajes">
+            <article>
+                <img src="steve j.jpg">
+                <h3>Steve Jobs</h3>
+                <p>Cofundador de Apple. Visionario que transformó la computación personal y la telefonía móvil.</p>
+            </article>
+            <article>
+                <img src="bill gates.jpg">
+                <h3>Bill Gates</h3>
+                <p>Fundador de Microsoft. Líder en la democratización del software a través de Windows.</p>
+            </article>
+            <article>
+                <img src="descarga (12.jpg">
+                <h3>Elon Musk</h3>
+                <p>Fundador de SpaceX y Tesla. Impulsa la transición energética y la exploración espacial.</p>
+            </article>
+            <article>
+                <img src="Mark Zuckerberg.jpg">
+                <h3>Mark Zuckerberg</h3>
+                <p>Creador de Facebook (Meta). Transformó la manera en que el mundo se conecta.</p>
+            </article>
+            <article>
+                <img src="jeff b.jpg">
+                <h3>Jeff Bezos</h3>
+                <p>Fundador de Amazon. Revolucionó el comercio electrónico y la nube global.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="internet" class="categoria-seccion">
+        <h2>Internet y Ciencia</h2>
+        <div class="grid-personajes">
+            <article>
+                <img src="Tim berners lee.jpg">
+                <h3>Tim Berners-Lee</h3>
+                <p>Padre de la World Wide Web. Creó los protocolos HTML y HTTP.</p>
+            </article>
+            <article>
+                <img src="Nikola t.jpg">
+                <h3>Nikola Tesla</h3>
+                <p>Genio de la electricidad. Sus patentes son la base del suministro eléctrico moderno.</p>
+            </article>
+            <article>
+                <img src="hedy lamarr.jpg">
+                <h3>Hedy Lamarr</h3>
+                <p>Inventora del espectro ensanchado, tecnología precursora del Wi-Fi.</p>
+            </article>
+            <article>
+                <img src="margaret hamilton - copia.jpg">
+                <h3>Margaret Hamilton</h3>
+                <p>Directora de ingeniería de software para el Apolo 11.</p>
+            </article>
+            <article>
+                <img src="Geoffrey h.jpg">
+                <h3>Geoffrey Hinton</h3>
+                <p>Pionero del Deep Learning. Permitió el auge de la Inteligencia Artificial.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="quizz">
+        <h2>Desafío Tecnoverso</h2>
+        <div class="quizz-container" id="quiz-box"></div>
+        <div id="quiz-result"></div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="contactForm" onsubmit="validateForm(event)">
+            <input type="text" id="nombre" placeholder="Nombre completo" required>
+            <input type="email" id="email" placeholder="Correo electrónico" required>
+            <textarea id="mensaje" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <footer><p>&copy; 2026 Tecnoverso - Todos los derechos reservados.</p></footer>
+
+    <script>
+        // --- LOGICA DE ESTRELLAS ---
+        function setRating(n) {
+            const stars = document.querySelectorAll('.star');
+            stars.forEach((star, index) => {
+                if (index < n) {
+                    star.classList.add('active');
+                } else {
+                    star.classList.remove('active');
+                }
+            });
+        }
+
+        // --- ENVIAR EXPECTATIVAS ---
+        function enviarExpectativas() {
+            const mensajeDiv = document.getElementById('mensaje-exito');
+            const textarea = document.getElementById('expectativasText');
+            
+            mensajeDiv.innerText = "Gracias por compartir tus espectativas con nosotros, esperamos que disfrutes nuestra pagina!";
+            mensajeDiv.classList.add('mostrar-mensaje');
+            
+            // Limpiar
+            textarea.value = "";
+            document.querySelectorAll('.star').forEach(s => s.classList.remove('active'));
+
+            setTimeout(() => {
+                mensajeDiv.classList.remove('mostrar-mensaje');
+            }, 5000);
+        }
+
+        // --- LOGICA DEL QUIZ ---
+        const questions = [
+            { q: "¿Quién descifró Enigma?", a: ["Alan Turing", "Bill Gates", "Nikola Tesla"], correct: 0 },
+            { q: "¿Qué creó Tim Berners-Lee?", a: ["Windows", "WWW", "Linux"], correct: 1 },
+            { q: "¿Madre de la programación?", a: ["Hedy Lamarr", "Ada Lovelace", "Susan W."], correct: 1 },
+            { q: "¿Empresa de Elon Musk?", a: ["SpaceX", "Apple", "Google"], correct: 0 },
+            { q: "¿Creador de Linux?", a: ["Linus Torvalds", "Mark Z.", "Jeff Bezos"], correct: 0 },
+            { q: "¿Aporte de Hedy Lamarr?", a: ["Wi-Fi", "Telegrafía", "Compilador"], correct: 0 }
+        ];
+
+        let currentStep = 0;
+        let score = 0;
+        let errors = 0;
+
+        function renderQuiz() {
+            const quizBox = document.getElementById('quiz-box');
+            if (currentStep * 2 >= questions.length) {
+                showFinalResult();
+                return;
+            }
+            quizBox.innerHTML = "";
+            for (let i = currentStep * 2; i < (currentStep * 2) + 2; i++) {
+                if (!questions[i]) break;
+                const div = document.createElement('div');
+                div.className = "pregunta";
+                div.innerHTML = `<p>${questions[i].q}</p>`;
+                questions[i].a.forEach((opt, idx) => {
+                    const btn = document.createElement('button');
+                    btn.innerText = opt;
+                    btn.onclick = () => handleAnswer(btn, i, idx);
+                    div.appendChild(btn);
+                });
+                quizBox.appendChild(div);
+            }
+        }
+
+        function handleAnswer(btn, qIdx, aIdx) {
+            const btns = btn.parentElement.querySelectorAll('button');
+            btns.forEach(b => b.disabled = true);
+            if (aIdx === questions[qIdx].correct) {
+                btn.style.backgroundColor = "#2ecc71";
+                score++;
+            } else {
+                btn.style.backgroundColor = "#e74c3c";
+                btns[questions[qIdx].correct].style.backgroundColor = "#2ecc71";
+                errors++;
+            }
+            const totalAnsweredInStep = document.querySelectorAll('button:disabled').length;
+            if (totalAnsweredInStep % 6 === 0) {
+                setTimeout(() => {
+                    currentStep++;
+                    renderQuiz();
+                }, 1500);
+            }
+        }
+
+        function showFinalResult() {
+            const quizBox = document.getElementById('quiz-box');
+            const resultDiv = document.getElementById('quiz-result');
+            quizBox.innerHTML = "";
+            if (score >= 5) {
+                resultDiv.innerHTML = `<div class="final-card success"><h3>¡Felicidades!</h3><p>Aciertos: ${score}</p></div>`;
+            } else {
+                resultDiv.innerHTML = `<div class="final-card failure"><h3>Sigue estudiando</h3><p>Errores: ${errors}</p><button class="btn-retry" onclick="location.reload()">REINTENTAR</button></div>`;
+            }
+        }
+
+        renderQuiz();
+
+        function validateForm(e) {
+            e.preventDefault();
+            alert("¡Gracias! Procesando tu mensaje...");
+        }
+    </script>
+</body>
+</html> 
